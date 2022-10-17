@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Atma
+- Font Author: Copyright 2015 The Atma Project Authors (www.black-foundry.com)
+- Font Source: http://fonts.gstatic.com/s/atma/v15/uK_84rqWc-Eom25bDj8WIv4.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

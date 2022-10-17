@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(255, 247, 233);
+  border-bottom: 0.2em black double;
+  page-break-after: auto;
+}
+
+/* Carousel */
+.my-carousel {
+  padding: 0rem;
+  margin: 0rem;
+}
+/* Carousel */
+
+.navbar-brand {
+  margin-left: 400px;
+}
+.nav-link {
+  margin-left: 50px;
+}
+.navbar-nav {
+  margin-left: 30px;
+}

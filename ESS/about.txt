@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Kiwi Maru
+- Font Author: Copyright 2020 The Kiwi Maru Project Authors (https://github.com/Kiwi-KawagotoKajiru/Kiwi-Maru)
+- Font Source: http://fonts.gstatic.com/s/kiwimaru/v14/R70YjykGkuuDep-hRg6YmACQXzLhTg.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
