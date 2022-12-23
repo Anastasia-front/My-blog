@@ -247,10 +247,11 @@ body.lock {
 }
 .n1 {
   font-size: 2rem;
-  margin: 0 0 40px 0;
+  padding-top: 3px;
 }
 .t1 {
   font-size: 1.3rem;
+  padding-top: 30px;
 }
 
 .btns,
@@ -339,11 +340,10 @@ body.lock {
 }
 .phone {
   display: flex;
-  margin: 0 0 -5% 0;
 }
 .n1 {
-  width: 5%;
-  height: 1%;
+  width: 15px;
+  height: 18px;
 }
 .numb {
   margin: 0 0 0 5%;
@@ -352,8 +352,9 @@ body.lock {
   display: flex;
 }
 .m1 {
-  width: 5%;
-  height: 1%;
+  width: 18px;
+  height: 18px;
+  padding-top: 5px;
 }
 .mail {
   margin: 0 0 0 5%;
