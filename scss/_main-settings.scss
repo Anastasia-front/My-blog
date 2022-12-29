@@ -1,0 +1,150 @@
+.container {
+  width: 100vw;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 10px;
+  @media screen and (min-width: 428px) {
+    & {
+      max-width: 396px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    & {
+      max-width: 736px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      max-width: 1158px;
+    }
+  }
+}
+body {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  behavior: smooth;
+  font-size: 16px;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 100px;
+  width: 100vw;
+  background: var(--white);
+  @media screen and (max-width: 768px) {
+    & {
+      height: 70px;
+    }
+  }
+}
+
+main {
+  padding-top: 100px;
+  @media screen and (max-width: 768px) {
+    & {
+      padding-top: 0px;
+    }
+  }
+}
+.bg-sun {
+  background: rgb(241, 241, 255) url(./../home/img/sun.jpeg) 0 0/100% auto
+    no-repeat;
+  @media screen and (max-width: 768px) {
+    & {
+      background: rgb(241, 241, 255);
+    }
+  }
+}
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+  transition: all var(--main-transition);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  color: var(--black);
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+// -------------------------------------HEADER--------------------------------
+.container-header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  margin: 15px 0;
+  @media screen and (max-width: 768px) {
+    & {
+      margin: 0;
+    }
+  }
+  gap: 70px;
+  .logo {
+    padding: 10px;
+    font-size: 20px;
+    font-family: serif;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    padding: 0;
+    margin: 0;
+    @media screen and (max-width: 767px) {
+      & {
+        display: none;
+      }
+    }
+  }
+}
+
+.nav-items,
+.contacts-icons {
+  display: flex;
+  gap: 50px;
+}
+.contacts-icons {
+  @media screen and (max-width: 1199px) {
+    & {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+  }
+}

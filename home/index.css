@@ -5,10 +5,11 @@ body {
   font-weight: 400;
   behavior: smooth;
 }
+
 body.lock {
   overflow: hidden;
 }
-.wrapper {
+.container {
   width: 100vw;
   height: auto;
   position: relative;

@@ -1,0 +1,48 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 1;
+  transition: opacity var(--main-transition);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.backdrop.is-hidden.modal {
+  transform: translate(-50%, -50%);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform var(--main-transition);
+  width: 300px;
+  height: 500px;
+  overflow: scroll;
+  background-color: var(--light-grey);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.close {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  background-color: var(--modal-color);
+  border-style: none;
+}
+.icon-close {
+  &:active,
+  &:hover,
+  &:focus {
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.14),
+      -3px -3px 7px rgba(0, 0, 0, 0.12), 3px -3px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+  }
+}
