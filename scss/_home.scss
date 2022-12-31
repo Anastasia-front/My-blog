@@ -180,7 +180,7 @@
 .contacts .title {
   border-bottom: 3px solid var(--grass-green);
   margin: 0;
-  width: 45%;
+  width: 125px;
 }
 .contacts-icon .phone-right {
   margin-right: -7px;
@@ -320,7 +320,7 @@
 @media screen and (max-width: 767px) {
   .flex-container {
     flex-direction: column;
-    gap: 30px;
+    gap: 0;
   }
   .my-projects {
     margin: 0 30px;
@@ -352,7 +352,7 @@
     font-size: 26px;
   }
   .spoiler {
-    margin: -70px 0 0 429px;
+    margin: -140px 0 0 429px;
     width: 56.6%;
     padding-bottom: 50px;
   }
