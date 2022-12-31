@@ -12,7 +12,7 @@
     <title>BLOG</title>
   </head>
   <body>
-    <header class="header blog page-header">
+    <header class="blog header page-header">
       <div class="container burger-container container-header">
         <div class="container">
           <div class="container nav-container">
@@ -39,7 +39,8 @@
                       class="contact-icon"
                     >
                       <svg
-                        width="18"
+                        class="envelop"
+                        width="16"
                         fill="#000000"
                         viewBox="0 0 32.311 32.311"
                         xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +63,8 @@
                   <li class="contacts-icon">
                     <a href="tel:+380666080702" class="contact-icon">
                       <svg
-                        height="26"
+                        class="phone-right"
+                        height="22"
                         viewBox="0 0 32 32"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -114,137 +116,147 @@
     </header>
     <main>
       <div class="container">
-        <div class="container__grid main grid">
-          <h1 class="main__header">My Blog</h1>
-          <div class="main__big">
-            <img class="image" src="./blog/img/1.png" alt="1" />
+        <div class="grid">
+          <h1 class="grid__header">My Blog</h1>
+          <div class="grid__big">
+            <a href="#" onclick="return false;">
+              <img class="image" src="./blog/img/1.png" alt="1"
+            /></a>
             <div class="main__text text">
               <h6 class="text__data data">sep 28, 2022</h6>
-              <h1 class="text__title title">
-                How I dealt with the grid property when creating this page
-              </h1>
+              <a href="#" onclick="return false;">
+                <h1 class="text__title title">
+                  How I dealt with the grid property when creating this page
+                </h1>
+              </a>
               <p class="text__subtitle subtitle">
                 It was difficult, but I figured it out and did it. You can click
                 here to read the whole story
               </p>
             </div>
           </div>
-          <div class="main__items items">
-            <div class="items__item">
-              <a href="" class="items__img"
-                ><img src="./blog/img/2.png" alt=""
+          <ul class="main__items items">
+            <li class="items__item">
+              <a href=""
+                ><img class="items__img" src="./blog/img/2.png" alt="2"
               /></a>
               <div class="items__text">
-                <a href="" class="items__data data">sep 20, 2022</a>
-                <a href="" class="items__title title"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nisi, minus?</a
+                <h6 class="items__data data">sep 20, 2022</h6>
+                <a href=""
+                  ><h3 class="items__title title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi, minus?
+                  </h3></a
                 >
-                <a href="" class="items__subtitle subtitle"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p class="items__subtitle subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Consectetur consequatur mollitia esse nostrum architecto. Non,
                   ipsam? Ex possimus ad dolore cum doloribus adipisci
-                  necessitatibus tenetur harum eveniet optio, saepe
-                  recusandae!</a
-                >
+                  necessitatibus tenetur harum eveniet optio, saepe recusandae!
+                </p>
               </div>
-            </div>
-            <div class="items__item">
-              <a href="" class="items__img"
-                ><img src="./blog/img/3.png" alt=""
+            </li>
+            <li class="items__item">
+              <a href=""
+                ><img class="items__img" src="./blog/img/3.png" alt="3"
               /></a>
               <div class="items__text">
-                <a href="" class="items__data data">sep 20, 2022</a>
-                <a href="" class="items__title title"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nisi, minus?</a
-                >
-                <a href="" class="items__subtitle subtitle"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <h6 class="items__data data">sep 20, 2022</h6>
+                <a href=""
+                  ><h3 class="items__title title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi, minus?
+                  </h3>
+                </a>
+                <p class="items__subtitle subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Consectetur consequatur mollitia esse nostrum architecto. Non,
                   ipsam? Ex possimus ad dolore cum doloribus adipisci
-                  necessitatibus tenetur harum eveniet optio, saepe
-                  recusandae!</a
-                >
+                  necessitatibus tenetur harum eveniet optio, saepe recusandae!
+                </p>
               </div>
-            </div>
-            <div class="items__item">
-              <a href="" class="items__img"
-                ><img src="./blog/img/4.png" alt=""
+            </li>
+            <li class="items__item">
+              <a href=""
+                ><img class="items__img" src="./blog/img/4.png" alt="4"
               /></a>
               <div class="items__text">
-                <a href="" class="items__data data">sep 20, 2022</a>
-                <a href="" class="items__title title"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nisi, minus?</a
-                >
-                <a href="" class="items__subtitle subtitle"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <h6 class="items__data data">sep 20, 2022</h6>
+                <a href="#" onclick="return false;">
+                  <h3 class="items__title title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi, minus?
+                  </h3>
+                </a>
+                <p class="items__subtitle subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Consectetur consequatur mollitia esse nostrum architecto. Non,
                   ipsam? Ex possimus ad dolore cum doloribus adipisci
-                  necessitatibus tenetur harum eveniet optio, saepe
-                  recusandae!</a
-                >
+                  necessitatibus tenetur harum eveniet optio, saepe recusandae!
+                </p>
               </div>
-            </div>
-            <div class="items__item">
-              <a href="" class="items__img"
-                ><img src="./blog/img/5.png" alt=""
+            </li>
+            <li class="items__item">
+              <a href=""
+                ><img class="items__img" src="./blog/img/5.png" alt="5"
               /></a>
               <div class="items__text">
-                <a href="" class="items__data data">sep 20, 2022</a>
-                <a href="" class="items__title title"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nisi, minus?</a
-                >
-                <a href="" class="items__subtitle subtitle"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <h6 class="items__data data">sep 20, 2022</h6>
+                <a href="#" onclick="return false;">
+                  <h3 class="items__title title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi, minus?
+                  </h3>
+                </a>
+                <p class="items__subtitle subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Consectetur consequatur mollitia esse nostrum architecto. Non,
                   ipsam? Ex possimus ad dolore cum doloribus adipisci
-                  necessitatibus tenetur harum eveniet optio, saepe
-                  recusandae!</a
-                >
+                  necessitatibus tenetur harum eveniet optio, saepe recusandae!
+                </p>
               </div>
-            </div>
-            <div class="items__item">
-              <a href="" class="items__img"
-                ><img src="./blog/img/6.png" alt=""
+            </li>
+            <li class="items__item">
+              <a href=""
+                ><img class="items__img" src="./blog/img/6.png" alt="6"
               /></a>
               <div class="items__text">
-                <a href="" class="items__data data">sep 20, 2022</a>
-                <a href="" class="items__title title"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nisi, minus?</a
-                >
-                <a href="" class="items__subtitle subtitle"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <h6 class="items__data data">sep 20, 2022</h6>
+                <a href="#" onclick="return false;">
+                  <h3 class="items__title title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi, minus?
+                  </h3>
+                </a>
+                <p class="items__subtitle subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Consectetur consequatur mollitia esse nostrum architecto. Non,
                   ipsam? Ex possimus ad dolore cum doloribus adipisci
-                  necessitatibus tenetur harum eveniet optio, saepe
-                  recusandae!</a
-                >
+                  necessitatibus tenetur harum eveniet optio, saepe recusandae!
+                </p>
               </div>
-            </div>
-            <div class="items__item">
-              <a href="" class="items__img"
-                ><img src="./blog/img/7.png" alt=""
+            </li>
+            <li class="items__item">
+              <a href=""
+                ><img class="items__img" src="./blog/img/7.png" alt="7"
               /></a>
               <div class="items__text">
-                <a href="" class="items__data data">sep 20, 2022</a>
-                <a href="" class="items__title title"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nisi, minus?</a
-                >
-                <a href="" class="items__subtitle subtitle"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <h6 class="items__data data">sep 20, 2022</h6>
+                <a href="#" onclick="return false;">
+                  <h3 class="items__title title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi, minus?
+                  </h3>
+                </a>
+                <p class="items__subtitle subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Consectetur consequatur mollitia esse nostrum architecto. Non,
                   ipsam? Ex possimus ad dolore cum doloribus adipisci
-                  necessitatibus tenetur harum eveniet optio, saepe
-                  recusandae!</a
-                >
+                  necessitatibus tenetur harum eveniet optio, saepe recusandae!
+                </p>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </main>

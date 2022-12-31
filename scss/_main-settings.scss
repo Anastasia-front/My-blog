@@ -21,10 +21,11 @@
 }
 body {
   font-family: "Roboto";
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   behavior: smooth;
-  font-size: 16px;
+  overflow-x: hidden;
 }
 header {
   position: fixed;
@@ -50,11 +51,11 @@ main {
   }
 }
 .bg-sun {
-  background: rgb(241, 241, 255) url(./../home/img/sun.jpeg) 0 0/100% auto
+  background: var(--bg-violet) url(./../home/img/sun.jpeg) 0 0/100% auto
     no-repeat;
   @media screen and (max-width: 768px) {
     & {
-      background: rgb(241, 241, 255);
+      background: var(--bg-violet);
     }
   }
 }
@@ -74,6 +75,24 @@ a {
   padding: 0;
   cursor: pointer;
   color: var(--black);
+  &:active,
+  &:hover,
+  &:focus {
+    color: var(--white);
+    text-shadow: var(--text-shadow-black);
+  }
+  img {
+    &:active,
+    &:hover,
+    &:focus {
+      box-shadow: var(--box-shadow);
+      border-radius: 50%;
+    }
+  }
+}
+a span {
+  font-size: 16px;
+  font-family: "Roboto";
 }
 button {
   cursor: pointer;

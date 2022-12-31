@@ -3,8 +3,22 @@
   --black: #000;
   --pink: #ffeded;
   --active: #ff3877;
-  --text-shadow-white: 2px 2px 3px rgba(255, 220, 230),
+  --grey: rgb(45, 45, 45);
+  --green: rgb(24, 78, 34);
+  --grass-green: rgb(56, 158, 74);
+  --light-green: rgb(234, 244, 155);
+  --bg-violet: rgb(241, 241, 255);
+  --text-shadow-pink: 2px 2px 3px rgba(255, 220, 230),
     -2px -2px 3px rgba(255, 220, 230), 2px -2px 3px rgba(255, 220, 230),
     -2px 2px 3px rgba(255, 220, 230);
+  --text-shadow-white: 2px 2px 3px rgba(255, 255, 255, 0.7),
+    -2px -2px 3px rgba(255, 255, 255, 0.7),
+    2px -2px 3px rgba(255, 255, 255, 0.7), -2px 2px 3px rgba(255, 255, 255, 0.7);
+  --text-shadow-black: 2px 2px 3px rgba(0, 0, 0, 0.7),
+    -2px -2px 3px rgba(0, 0, 0, 0.7), 2px -2px 3px rgba(0, 0, 0, 0.7),
+    -2px 2px 3px rgba(0, 0, 0, 0.7);
   --border: rgba(0, 0, 0, 0.077);
+  --box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.7),
+    0px 1px 1px rgba(46, 47, 66, 0.7), 0px 1px 6px rgba(46, 47, 66, 0.7);
+  --main-transition: 200ms cubic-bezier(0.3, 1, 0.1, 2);
 }
