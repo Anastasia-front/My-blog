@@ -215,9 +215,10 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin: 110px 30px;
   justify-content: start;
   align-items: flex-start;
+  margin-left: 30px;
+  margin-top: 70px;
 }
 
 .projects-container a img:active, .projects-container a img:hover, .projects-container a img:focus {
@@ -314,7 +315,7 @@
   transform: rotate(40deg);
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 427px) {
   .section-profile {
     width: 280px;
   }
@@ -349,19 +350,16 @@
     flex-direction: column;
     gap: 0;
   }
-  .my-projects {
-    margin: 0 30px;
-  }
   .i {
     width: 330px;
   }
 }
 @media screen and (min-width: 768px) {
   .i {
-    width: 300px;
+    width: 349px;
   }
   .spoiler {
-    margin: -850px 0 0 1px;
+    margin: -1000px 0 0 1px;
     width: 52.5%;
     padding-bottom: 670px;
   }
@@ -371,7 +369,8 @@
     width: 280px;
   }
   .spoiler {
-    width: 93.7%;
+    width: 100%;
+    margin: 30px 0 0 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -379,9 +378,30 @@
     font-size: 26px;
   }
   .spoiler {
-    margin: -150px 0 0 409px;
-    width: 57.5%;
+    margin: -30px 0 0 1px;
+    width: 99.8%;
     padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 427px) {
+  .my-projects {
+    margin: 0;
+  }
+  .i {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 428px) and (max-width: 767px) {
+  .my-projects {
+    margin: 0 3px;
+  }
+  .i {
+    width: 370px;
+  }
+  .spoiler {
+    margin: 50px 0 0 3px;
+    width: 98.4%;
+    padding-bottom: 70px;
   }
 }
 .header.blog {
