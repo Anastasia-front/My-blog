@@ -17,6 +17,7 @@
 }
 .section-profile {
   padding: 50px 0;
+  max-width: min-content;
 }
 .profile-container {
   display: flex;
@@ -352,7 +353,7 @@
     font-size: 26px;
   }
   .spoiler {
-    margin: -170px 0 0 409px;
+    margin: -150px 0 0 409px;
     width: 57.5%;
     padding-bottom: 50px;
   }
