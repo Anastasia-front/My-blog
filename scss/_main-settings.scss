@@ -140,9 +140,7 @@ ul {
   }
   .menu {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 70px;
+    gap: 100px;
     padding: 0;
     margin: 0;
     @media screen and (max-width: 767px) {
@@ -153,10 +151,13 @@ ul {
   }
 }
 
-.nav-items,
+.nav-items {
+  display: flex;
+  gap: 70px;
+}
 .contacts-icons {
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 .contacts-icons {
   @media screen and (max-width: 1199px) {

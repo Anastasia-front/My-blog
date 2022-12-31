@@ -22,10 +22,7 @@
 }
 
 .section-profile {
-  padding: 50px 10px;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
+  padding: 50px 0;
 }
 
 .profile-container {
@@ -203,11 +200,12 @@
 .contacts .title {
   border-bottom: 3px solid var(--grass-green);
   margin: 0;
-  width: 125px;
+  width: 130px;
 }
 
 .contacts-icon .phone-right {
   margin-right: -7px;
+  margin-top: -2px;
 }
 
 .my-projects {
@@ -360,7 +358,7 @@
     width: 300px;
   }
   .spoiler {
-    margin: -900px 0 0 11px;
+    margin: -850px 0 0 1px;
     width: 52.5%;
     padding-bottom: 670px;
   }
@@ -378,8 +376,8 @@
     font-size: 26px;
   }
   .spoiler {
-    margin: -140px 0 0 429px;
-    width: 56.6%;
+    margin: -170px 0 0 409px;
+    width: 57.5%;
     padding-bottom: 50px;
   }
 }
@@ -918,9 +916,7 @@ ul {
 }
 .nav-container .menu {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 70px;
+  gap: 100px;
   padding: 0;
   margin: 0;
 }
@@ -930,10 +926,14 @@ ul {
   }
 }
 
-.nav-items,
+.nav-items {
+  display: flex;
+  gap: 70px;
+}
+
 .contacts-icons {
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 
 @media screen and (max-width: 1199px) {
