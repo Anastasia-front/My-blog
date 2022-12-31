@@ -22,7 +22,7 @@
 }
 
 .section-profile {
-  padding: 20px 10px;
+  padding: 50px 10px;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -127,6 +127,9 @@
 .video-about .text {
   padding: 0 20px 20px;
 }
+.video-about a img:active, .video-about a img:hover, .video-about a img:focus {
+  border-radius: 7px;
+}
 
 .img {
   position: relative;
@@ -159,8 +162,8 @@
   margin: 30px 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
-  justify-content: start;
 }
 .content-container .contacts .title,
 .content-container .contact .title {
@@ -200,7 +203,7 @@
 .contacts .title {
   border-bottom: 3px solid var(--grass-green);
   margin: 0;
-  margin: 0 100px;
+  width: 45%;
 }
 
 .contacts-icon .phone-right {
@@ -216,10 +219,7 @@
   align-items: flex-start;
 }
 
-.projects-container a img:active, .projects-container a img:hover, .projects-container a img:focus,
-.video-about a img:active,
-.video-about a img:hover,
-.video-about a img:focus {
+.projects-container a img:active, .projects-container a img:hover, .projects-container a img:focus {
   border-radius: 0;
 }
 
@@ -795,19 +795,18 @@
 }
 
 body {
-  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  behavior: smooth;
   overflow-x: hidden;
+  margin: 0 auto;
 }
 
 header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 998;
   height: 100px;
   width: 100vw;
   background: var(--white);
@@ -866,7 +865,7 @@ a img:active, a img:hover, a img:focus {
 
 a span {
   font-size: 16px;
-  font-family: "Roboto";
+  font-family: "Arial", sans-serif;
 }
 
 button {
@@ -1148,6 +1147,7 @@ ul {
   background-color: rgba(46, 47, 66, 0.4);
   opacity: 1;
   transition: opacity var(--main-transition);
+  z-index: 999;
 }
 
 .backdrop.is-hidden {
@@ -1161,8 +1161,9 @@ ul {
 }
 
 .modal {
+  z-index: 1000;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform var(--main-transition);

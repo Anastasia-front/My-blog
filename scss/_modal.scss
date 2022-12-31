@@ -7,6 +7,7 @@
   background-color: rgba(46, 47, 66, 0.4);
   opacity: 1;
   transition: opacity var(--main-transition);
+  z-index: 999;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -17,8 +18,9 @@
   transform: translate(-50%, -50%);
 }
 .modal {
+  z-index: 1000;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform var(--main-transition);

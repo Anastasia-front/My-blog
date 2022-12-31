@@ -20,18 +20,17 @@
   }
 }
 body {
-  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  behavior: smooth;
   overflow-x: hidden;
+  margin: 0 auto;
 }
 header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 998;
   height: 100px;
   width: 100vw;
   background: var(--white);
@@ -92,7 +91,7 @@ a {
 }
 a span {
   font-size: 16px;
-  font-family: "Roboto";
+  font-family: "Arial", sans-serif;
 }
 button {
   cursor: pointer;
