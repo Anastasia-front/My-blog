@@ -4,19 +4,13 @@
   margin: 0 auto;
   padding: 0 10px;
   @media screen and (min-width: 428px) {
-    & {
-      max-width: 396px;
-    }
+    max-width: 396px;
   }
   @media screen and (min-width: 768px) {
-    & {
-      max-width: 736px;
-    }
+    max-width: 736px;
   }
   @media screen and (min-width: 1200px) {
-    & {
-      max-width: 1158px;
-    }
+    max-width: 1158px;
   }
 }
 body {
@@ -122,9 +116,7 @@ ul {
   height: 70px;
   margin: 15px 0;
   @media screen and (max-width: 768px) {
-    & {
-      margin: 0;
-    }
+    margin: 0;
   }
   gap: 70px;
   .logo {
@@ -144,9 +136,7 @@ ul {
     padding: 0;
     margin: 0;
     @media screen and (max-width: 767px) {
-      & {
-        display: none;
-      }
+      display: none;
     }
   }
 }
@@ -161,9 +151,7 @@ ul {
 }
 .contacts-icons {
   @media screen and (max-width: 1199px) {
-    & {
-      flex-direction: column;
-      row-gap: 10px;
-    }
+    flex-direction: column;
+    row-gap: 10px;
   }
 }

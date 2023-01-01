@@ -7,37 +7,33 @@
   height: 100vh;
   background: var(--light-green);
   @media screen and (min-width: 428px) {
-    & {
-      width: 100px;
-    }
+    width: 20%;
   }
   @media screen and (min-width: 768px) {
-    & {
-      top: 100px;
-      width: 150px;
-    }
+    top: 100px;
+    width: 22%;
   }
   @media screen and (min-width: 1200px) {
-    & {
-      width: 200px;
-    }
+    width: 20%;
   }
 }
 .sidebar__menu {
   margin: 7px 3px;
+  margin-top: 40px;
   @media screen and (min-width: 428px) {
     & {
       margin: 10px 5px;
+      margin-top: 50px;
     }
   }
   @media screen and (min-width: 768px) {
     & {
-      margin: 12px 10px;
+      margin: 40px 10px;
     }
   }
   @media screen and (min-width: 1200px) {
     & {
-      margin: 15px 20px;
+      margin: 55px 20px;
     }
   }
 }
@@ -45,7 +41,7 @@
 .sidebar__link {
   font-family: serif;
   color: var(--green);
-  font-size: 11px;
+  font-size: 16px;
   text-transform: uppercase;
   line-height: 1.5;
   text-decoration: none;
@@ -55,24 +51,17 @@
     color: var(--black);
     text-shadow: none;
   }
-
   @media screen and (min-width: 428px) {
-    & {
-      font-size: 12px;
-      line-height: 0.7;
-    }
+    font-size: 20px;
+    line-height: 1.7;
   }
   @media screen and (min-width: 768px) {
-    & {
-      font-size: 18px;
-      line-height: 1.2;
-    }
+    font-size: 25px;
+    line-height: 2;
   }
   @media screen and (min-width: 1200px) {
-    & {
-      font-size: 22px;
-      line-height: 1.5;
-    }
+    font-size: 28px;
+    line-height: 1.5;
   }
 }
 .photo-active {
@@ -83,36 +72,37 @@
 .sidebar__list li:not(:last-child) {
   margin: 0 0 10px 0;
   @media screen and (min-width: 428px) {
-    & {
-      margin: 0 0 15px 0;
-    }
+    margin: 0 0 15px 0;
   }
   @media screen and (min-width: 768px) {
-    & {
-      margin: 0 0 20px 0;
-    }
+    margin: 0 0 20px 0;
   }
   @media screen and (min-width: 1200px) {
-    & {
-      margin: 0 0 30px 0;
-    }
+    margin: 0 0 30px 0;
   }
 }
 .sidebar__list {
   text-align: center;
-  li::before {
-    content: "• ";
-    color: var(--green);
-    font-size: 15px;
-    @media screen and (min-width: 768px) {
-      & {
-        font-size: 25px;
-      }
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  @media screen and (min-width: 428px) {
+    gap: 100px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 25px;
+    li::before {
+      content: "• ";
+      color: var(--green);
+      font-size: 15px;
     }
   }
   @media screen and (min-width: 1200px) {
-    & {
-      font-size: 30px;
+    font-size: 30px;
+  }
+  li {
+    @media screen and (max-width: 600px) {
+      transform: rotate(-90deg);
     }
   }
 }
@@ -123,55 +113,41 @@
 }
 
 .photo__title {
-  font-size: 20px;
+  font-size: 30px;
   color: #890;
   text-shadow: 2px 1px black;
   margin: 80px 0 0 80px;
   border-bottom: 3px solid #890;
   padding-bottom: 15px;
   @media screen and (min-width: 428px) {
-    & {
-      font-size: 20px;
-      margin: 80px 0 0 110px;
-    }
+    margin: 80px 0 0 110px;
   }
   @media screen and (min-width: 768px) {
-    & {
-      font-size: 30px;
-      margin: 10px 0 0 160px;
-    }
+    font-size: 45px;
+    margin: 10px 0 0 160px;
   }
   @media screen and (min-width: 1200px) {
-    & {
-      font-size: 35px;
-      margin: 7px 0 0 220px;
-    }
+    font-size: 50px;
+    margin: 7px 0 0 220px;
   }
 }
 .photo__subtitle {
   color: rgb(169, 185, 41);
-  font-size: 15px;
+  font-size: 25px;
   text-shadow: 2px 1px rgb(75, 75, 75);
   margin: 10px 0 0 80px;
   padding-bottom: 15px;
   border-bottom: 2px solid rgb(169, 185, 41);
   @media screen and (min-width: 428px) {
-    & {
-      font-size: 16px;
-      margin: 10px 0 0 110px;
-    }
+    margin: 10px 0 0 110px;
   }
   @media screen and (min-width: 768px) {
-    & {
-      font-size: 25px;
-      margin: 10px 0 0 160px;
-    }
+    font-size: 35px;
+    margin: 10px 0 0 160px;
   }
   @media screen and (min-width: 1200px) {
-    & {
-      font-size: 30px;
-      margin: 10px 0 0 220px;
-    }
+    font-size: 40px;
+    margin: 10px 0 0 220px;
   }
 }
 .gallery__subtitle {
@@ -180,79 +156,61 @@
   text-align: center;
   text-transform: uppercase;
   color: rgb(204, 213, 131);
-  font-size: 10px;
+  font-size: 15px;
   text-shadow: 1px 0px gray;
   border-top: 2px solid rgb(169, 185, 41);
   border-bottom: 2px solid rgb(169, 185, 41);
   @media screen and (min-width: 768px) {
-    & {
-      margin: 20px 0 20px 5px;
-      font-size: 15px;
-    }
+    margin: 20px 0 20px 5px;
+    font-size: 25px;
   }
   @media screen and (min-width: 1200px) {
-    & {
-      margin: 20px 0 20px 15px;
-      font-size: 20px;
-    }
+    margin: 20px 0 20px 15px;
+    font-size: 30px;
   }
 }
 
 .photo {
   margin: 70px 0 10px 0;
   @media screen and (min-width: 428px) {
-    & {
-      margin: 0 0 15px 0;
-    }
+    margin: 20px 0 15px -45px;
+    padding-top: 10px;
+    width: 120%;
   }
   @media screen and (min-width: 768px) {
-    & {
-      margin: 0 0 20px 0;
-    }
+    margin: 30px 0 20px 0;
+    width: 100%;
   }
   @media screen and (min-width: 1200px) {
-    & {
-      margin: 0 0 30px 0;
-    }
+    margin: 50px 0 30px 0;
   }
 }
 
 .photo__gallery {
   margin: 0 5px 0 75px;
   @media screen and (min-width: 428px) {
-    & {
-      margin: 0 5px 0 105px;
-    }
+    margin: 0 5px 0 105px;
   }
   @media screen and (min-width: 768px) {
-    & {
-      margin: 0 5px 0 155px;
-    }
+    margin: 0 5px 0 155px;
   }
   @media screen and (min-width: 1200px) {
-    & {
-      margin: 0 5px 0 205px;
-    }
+    margin: 0 5px 0 205px;
   }
 }
 .gallery__items {
   display: grid;
   gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   @media screen and (min-width: 428px) {
-    & {
-      gap: 7px;
-    }
+    gap: 7px;
   }
   @media screen and (min-width: 768px) {
-    & {
-      gap: 10px;
-    }
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   @media screen and (min-width: 1200px) {
-    & {
-      gap: 12px;
-    }
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 .gallery__item img {

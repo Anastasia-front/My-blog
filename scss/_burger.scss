@@ -10,18 +10,23 @@
 }
 .header-menu-container {
   @media screen and (min-width: 767px) {
-    & {
-      display: none;
-    }
+    display: none;
+  }
+  .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
   }
 }
 .menu-toggle {
+  position: absolute;
+  top: 36px;
+  right: 36px;
   min-height: 40px;
   min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--black);
 
   margin: 0;
   padding: 0;
@@ -36,9 +41,7 @@
     margin-left: 20px;
   }
   @media screen and (min-width: 768px) {
-    & {
-      display: none;
-    }
+    display: none;
   }
 }
 
@@ -64,20 +67,13 @@
   transform: translateY(0);
 }
 
-.menu-container .menu-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
-}
-
 .mobile-menu {
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 70px;
+  gap: 100px;
   .active {
     color: var(--active);
   }
@@ -94,21 +90,21 @@
   color: var(--active);
 }
 .burger-nav-item {
-  font-size: 26px;
-  font-weight: var(--semibold-weight);
+  font-size: 36px;
   line-height: 1.11;
   .mobile-menu:active,
   .mobile-menu:hover,
   .mobile-menu:focus {
     text-shadow: var(--text-shadow-pink);
+    color: var(--grey);
   }
 }
 .burger-svg-icon-close {
   position: absolute;
   top: 0;
   right: 0;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
 }
 .burger-contacts-icons {
   display: flex;
@@ -117,16 +113,11 @@
   align-items: flex-start;
   margin-left: 15%;
   span {
-    &:active,
-    &:hover,
-    &:focus {
-      color: var(--orange);
-    }
+    font-size: 18px;
   }
 }
 .contact-icon {
   font-size: 20px;
-  font-weight: var(--bold-fonts);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,7 +130,6 @@
   margin: 0 10% 0 0;
 }
 .burger-svg-icon-link {
-  background-color: var(--orange);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,27 +137,4 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  .burger-svg-icon {
-    fill: var(--white);
-  }
-  &:active,
-  &:hover,
-  &:focus {
-    background: var(--grey);
-  }
-}
-.long {
-  @media screen and (max-width: 400px) {
-    & {
-      width: 60%;
-      overflow: scroll;
-    }
-  }
-}
-.contact-icon.long-email {
-  @media screen and (max-width: 400px) {
-    & {
-      margin-left: -40px;
-    }
-  }
 }

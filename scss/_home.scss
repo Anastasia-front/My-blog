@@ -56,6 +56,7 @@
     text-align: center;
   }
   .job {
+    line-height: 1.3;
     text-align: center;
   }
 }
@@ -108,6 +109,13 @@
   border-bottom: 2px solid var(--border);
   .text {
     padding: 0 20px 20px;
+    b {
+      &:active,
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
   }
   a img {
     &:active,
@@ -195,7 +203,6 @@
   justify-content: start;
   align-items: flex-start;
   margin-left: 30px;
-  margin-top: 90px;
 }
 .projects-container {
   a img {
@@ -208,10 +215,11 @@
 }
 .my-projects__title {
   border-bottom: 1px solid var(--black);
+  font-size: 25px;
 }
 .projects-container {
   display: flex;
-  gap: 30px;
+  gap: 29px;
   justify-content: start;
   align-items: center;
   flex-wrap: wrap;
@@ -315,8 +323,11 @@
   .block-1 {
     padding: 0;
   }
-  .video-about .text {
-    width: 90%;
+  .video-about {
+    margin: 0 6px;
+    .text {
+      width: 90%;
+    }
   }
 }
 @media screen and (max-width: 767px) {
@@ -329,13 +340,16 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .my-projects {
+    margin-top: 80px;
+  }
   .i {
     width: 349px;
   }
   .spoiler {
     margin: -1000px 0 0 1px;
     width: 52.5%;
-    padding-bottom: 670px;
+    padding-bottom: 800px;
   }
 }
 @media screen and (min-width: 100px) and (max-width: 428px) {
@@ -348,8 +362,11 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .my-projects {
+    margin-top: 72px;
+  }
   .my-projects__title {
-    font-size: 26px;
+    font-size: 30px;
   }
   .spoiler {
     margin: -30px 0 0 1px;

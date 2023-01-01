@@ -10,7 +10,7 @@ const c2 = subT[1];
 const c3 = subT[2];
 // console.log(c1, c2, c3);
 // ----------------------COORDINATES by-------------------------------
-const t1 = c1.getBoundingClientRect().top - 500;
+const t1 = c1.getBoundingClientRect().top;
 const t2 = c2.getBoundingClientRect().top;
 const t3 = c3.getBoundingClientRect().top;
 // console.log(t1, t2, t3);
