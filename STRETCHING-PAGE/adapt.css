@@ -1,60 +1,51 @@
-.wrapper {
+body {
   background: #d9d9d9;
-}
-.body {
   padding: 3%;
+  color: #000;
+}
+section {
+  padding: 10px 1vw;
+}
+h1,
+h2 {
+  margin: 0;
+}
+.conducting,
+.useful,
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
 }
 .title {
   font-family: "IM FELL Great Primer";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 5vw;
-  line-height: 5vw;
+  font-size: 30px;
   color: black;
   text-transform: uppercase;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 10px;
-}
-.uderline {
+  width: fit-content;
+  height: 50px;
   border-bottom: 2px solid #e1803a;
-  width: 50%;
-  margin-left: 25%;
-}
-.uder_line {
-  border-bottom: 2px solid #e1803a;
-  width: 20%;
-  margin-left: 40%;
+  margin-bottom: 10px;
 }
 .subtitle {
   font-family: "Iceland";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 3vw;
-  line-height: 3vw;
-  color: black;
-  display: inline-block;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  padding: 10px 0 3px 0;
+  margin: 0 auto 7px;
+  font-size: 20px;
+  width: fit-content;
+  height: 30px;
+  border-bottom: 2px solid #e1803a;
 }
 .text {
   font-family: "Inika";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.2vw;
-  line-height: 2vw;
+  font-size: 10px;
+  line-height: 1.4;
   color: black;
   text-indent: 1.5em;
-  text-align: justify;
   padding-bottom: 15px;
 }
 
 .conducting {
-  display: flex;
   background: #fff8f3;
 }
 
@@ -75,83 +66,20 @@
 .tblock {
   margin: 1% 0.5% 0 3%;
 }
-/* -------------------------ADAPTIVE-------------------- */
-@media (max-width: 600px) {
-  .useful__container {
-    width: 120%;
-  }
-  .contact__img {
-    min-width: 40%;
-  }
-  .title {
-    line-height: 1%;
-  }
-}
-@media (max-width: 800px) {
-  .title {
-    font-size: 4vw;
-    line-height: 2vw;
-  }
-  .subtitle {
-    font-size: 3vw;
-    line-height: 1vw;
-  }
-  .text {
-    font-size: 1.1vw;
-    line-height: 1.2vw;
-  }
-  .contact__img {
-    width: 50%;
-  }
-}
-@media (max-width: 1030px) {
-  .useful__container {
-    width: 130%;
-  }
-  .contact__img {
-    max-width: 60%;
-  }
-  .title {
-    line-height: 2vw;
-  }
-}
-@media (max-width: 1300px) {
-  .text {
-    font-size: 1.1vw;
-    line-height: 2vw;
-  }
-  .contact__img {
-    max-width: 50%;
-  }
-}
-@media (max-width: 1800px) {
-  .cont {
-    padding: 1%;
-  }
-}
-/* -------------------------ADAPTIVE-------------------- */
-
 .first {
   width: 100%;
+  max-width: 350px;
   height: auto;
 }
-
-.conducting__container {
-  margin: 10px 20px;
-}
-.conducting__title {
-  padding-bottom: 10px;
-  justify-content: center;
-  align-self: center;
-  text-align: center;
-}
-.conducting__subtitle {
-  padding: 10px 0 0 -20px;
-}
-.conducting__text {
+.flex {
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+/* -------------------------ADAPTIVE-------------------- */
+
+.conducting__text {
   padding: 10px 0 0 0;
 }
 .conducting__tblock {
@@ -160,20 +88,10 @@
 
 /* -------------------------USEFUL-------------------- */
 .useful {
-  display: flex;
   background: #fff2eb;
 }
-.useful__uder_line {
-  border-bottom: 2px solid #e1803a;
-  width: 45%;
-  margin-left: 27%;
-}
-.useful__subtitle {
-  margin: 5px;
-}
-.useful__img {
-  width: 100%;
-  height: auto;
+.useful__container {
+  width: 95%;
 }
 .useful__tblock {
   text-align: left;
@@ -182,48 +100,22 @@
 /* -------------------------CONTACT-------------------- */
 
 .contact {
-  display: flex;
   background: #ffe2d1;
-}
-.contact__container {
-  display: flexbox;
-  margin: 0;
-  padding: 0;
-  width: 150%;
-}
-.contact__img {
-  display: flexbox;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
 }
 .container__1 {
   background: #ffeade;
 }
 .cont {
-  padding: 2.3vw;
-  display: block;
+  padding: 10px 3px;
 }
 .contact__subtitle {
-  margin: 5px;
+  padding-top: 5px;
 }
 
-.contact__uder_line1 {
-  border-bottom: 2px solid #e1803a;
-  width: 55%;
-  margin-left: 23%;
-  margin-bottom: 5px;
-}
-.contact__uder_line2 {
-  border-bottom: 2px solid #e1803a;
-  width: 40%;
-  margin-left: 30%;
-}
 .contact__tblock {
   margin: 0 2% 0 2%;
 }
 .contact__text {
-  text-align: right;
   padding: 1% 0 0 0;
 }
 
@@ -232,18 +124,109 @@
 }
 .container__3 {
   background: #ffdcc8;
+  padding: 10px 60px;
+  text-align: center;
 }
-.contact__link:visited {
-  color: #975f37;
-  border-bottom: 1px solid #000;
-}
+
 .contact__link {
   color: #e1803a;
-  padding: 2%;
+  border-bottom: none;
 }
 .contact__link:hover {
   text-shadow: 1px 1px 1px #000;
 }
 .contact__link:active {
   color: #000;
+}
+.contact__link:visited {
+  color: #975f37;
+  border-bottom: 1px solid #000;
+}
+/* -------------------------ADAPTIVE-------------------- */
+@media (min-width: 768px) {
+  .conducting .first {
+    max-width: 200px;
+  }
+  .useful,
+  .contact {
+    display: block;
+  }
+  .flex-column {
+    margin-bottom: 10px;
+  }
+  .flex {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .flex.reverse {
+    flex-direction: row-reverse;
+  }
+  .flex.reverse .first {
+    max-width: 250px;
+  }
+  .conducting__container {
+    display: flex;
+    gap: 10px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .subtitle {
+    font-size: 30px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .contact__subtitle {
+    padding-top: 0;
+  }
+  .contact__text {
+    text-align: right;
+  }
+  .container__3 {
+    padding: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .conducting .first {
+    max-width: 400px;
+  }
+  .contact .first,
+  .flex.reverse .first {
+    max-width: 450px;
+  }
+  .flex-column {
+    margin-bottom: 30px;
+  }
+  .flex {
+    gap: 30px;
+  }
+  .conducting__container {
+    gap: 30px;
+  }
+  .title {
+    margin-top: 30px;
+    font-size: 50px;
+    padding-bottom: 70px;
+  }
+  .subtitle {
+    font-size: 40px;
+    padding-bottom: 45px;
+  }
+  .text {
+    font-size: 22px;
+    line-height: 1.7;
+  }
+  .contact__subtitle {
+    padding-top: 0;
+  }
+  .container__3 {
+    padding: 10px;
+  }
+}
+@media (min-width: 1800px) {
+  .text {
+    font-size: 25px;
+    line-height: 2;
+  }
 }
