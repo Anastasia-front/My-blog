@@ -91,11 +91,6 @@
   }
   @media screen and (min-width: 768px) {
     font-size: 25px;
-    li::before {
-      content: "• ";
-      color: var(--green);
-      font-size: 15px;
-    }
   }
   @media screen and (min-width: 1200px) {
     font-size: 30px;
