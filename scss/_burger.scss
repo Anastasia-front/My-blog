@@ -117,6 +117,16 @@
     font-size: 18px;
   }
 }
+.burger-contacts-icon {
+  &:active,
+  &:hover,
+  &:focus {
+    .icon {
+      border-radius: 20%;
+      box-shadow: 7px 0px 7px rgb(0 0 0 / 55%), -7px 0px 7px rgb(0 0 0 / 55%);
+    }
+  }
+}
 .contact-icon {
   font-size: 20px;
   display: flex;

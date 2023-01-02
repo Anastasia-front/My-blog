@@ -73,6 +73,14 @@ a {
   &:focus {
     color: var(--white);
     text-shadow: var(--text-shadow-black);
+    svg {
+      &:active,
+      &:hover,
+      &:focus {
+        border-radius: 20%;
+        box-shadow: 7px 0px 7px rgb(0 0 0 / 55%), -7px 0px 7px rgb(0 0 0 / 55%);
+      }
+    }
   }
   img {
     &:active,
@@ -153,5 +161,18 @@ ul {
   @media screen and (max-width: 1199px) {
     flex-direction: column;
     row-gap: 10px;
+  }
+}
+.contacts-icon {
+  &:active,
+  &:hover,
+  &:focus {
+    .icon {
+      border-radius: 20%;
+      box-shadow: 7px 0px 7px rgb(0 0 0 / 55%), -7px 0px 7px rgb(0 0 0 / 55%);
+      // &.svg-phone {
+      //   border-radius: 100%;
+      // }
+    }
   }
 }
