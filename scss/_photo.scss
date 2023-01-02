@@ -3,7 +3,7 @@
   position: fixed;
   top: 70px;
   left: 0px;
-  width: 70px;
+  width: 26%;
   height: 100vh;
   background: var(--light-green);
   @media screen and (min-width: 428px) {
@@ -19,7 +19,7 @@
 }
 .sidebar__menu {
   margin: 7px 3px;
-  margin-top: 40px;
+  margin-top: 60px;
   @media screen and (min-width: 428px) {
     & {
       margin: 10px 5px;
@@ -85,7 +85,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 90px;
   @media screen and (min-width: 428px) {
     gap: 100px;
   }

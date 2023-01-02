@@ -385,7 +385,7 @@
 }
 @media screen and (min-width: 1200px) {
   .my-projects {
-    margin-top: 72px;
+    margin-top: 80px;
   }
   .my-projects__title {
     font-size: 30px;
@@ -543,7 +543,7 @@
   position: fixed;
   top: 70px;
   left: 0px;
-  width: 70px;
+  width: 26%;
   height: 100vh;
   background: var(--light-green);
 }
@@ -566,7 +566,7 @@
 
 .sidebar__menu {
   margin: 7px 3px;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 @media screen and (min-width: 428px) {
   .sidebar__menu {
@@ -645,7 +645,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 90px;
 }
 @media screen and (min-width: 428px) {
   .sidebar__list {
@@ -1053,6 +1053,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--black);
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -1077,8 +1078,8 @@ ul {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-top: 30px;
-  margin-bottom: 50px;
+  padding-top: 60px;
+  margin-bottom: 40px;
   background: var(--pink);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   z-index: 999;
