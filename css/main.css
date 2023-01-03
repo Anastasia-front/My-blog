@@ -834,11 +834,16 @@
   }
 }
 
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+
 body {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  overflow-x: hidden;
   margin: 0 auto;
 }
 
@@ -1184,6 +1189,10 @@ ul {
   opacity: 1;
   transition: opacity var(--main-transition);
   z-index: 999;
+}
+
+body .backdrop {
+  overflow: hidden;
 }
 
 .backdrop.is-hidden {

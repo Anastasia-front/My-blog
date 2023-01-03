@@ -9,6 +9,10 @@
   transition: opacity var(--main-transition);
   z-index: 999;
 }
+
+body .backdrop {
+  overflow: hidden;
+}
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
