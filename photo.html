@@ -121,10 +121,10 @@
         </aside>
         <section class="photo">
           <div class="photo-container">
-            <h1 class="photo__title padding">My albums</h1>
+            <h1 class="photo__title padding" id="1">My albums</h1>
             <h2 class="photo__subtitle">Gallery</h2>
             <section class="photo__gallery gallery">
-              <h6 class="gallery__subtitle" id="1">shri-lanka</h6>
+              <h6 class="gallery__subtitle">shri-lanka</h6>
               <div class="gallery__items">
                 <div class="gallery__item">
                   <img src="./photos/img/shri/48.jpg" alt="orange flower" />
@@ -147,7 +147,7 @@
                     alt="beautiful view"
                   />
                 </div>
-                <div class="gallery__item">
+                <div class="gallery__item" id="back-to-home-appear">
                   <img
                     src="./photos/img/shri/IMG_8448.jpg"
                     alt="ocean,sunset"
@@ -320,6 +320,12 @@
         </section>
       </div>
     </main>
+    <button class="back-home btn-hidden" id="back-home">
+      <svg width="25" height="25" class="back-home__icon">
+        <use href="./home/icons/video-icons.svg#icon-arrow-right-on-btn"></use>
+      </svg>
+    </button>
+    <script src="./js/back-to-home.js"></script>
     <script src="./js/photo.js"></script>
 
     <!-- ---------------BURGER-------------------------- -->

@@ -17,6 +17,7 @@
   width: 100vw;
   height: 100vh;
   overflow: auto;
+  position: relative;
 }
 body {
   font-size: 16px;
@@ -48,8 +49,21 @@ main {
   }
 }
 .bg-sun {
-  background: var(--bg-violet) url(./../home/img/sun.jpeg) 0 0/100% auto
-    no-repeat;
+  background-image: url(./../home/img/sun-1x.jpg);
+  background-size: contain;
+  background-color: var(--bg-violet);
+  background-repeat: no-repeat;
+  background-position: 0px 100px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(./../home/img/sun-2x.jpg);
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(./../home/img/sun-3x.jpg);
+  }
   @media screen and (max-width: 768px) {
     & {
       background: var(--bg-violet);
@@ -91,7 +105,6 @@ a {
     &:hover,
     &:focus {
       box-shadow: var(--box-shadow);
-      border-radius: 50%;
     }
   }
 }
@@ -144,6 +157,7 @@ ul {
   }
   .menu {
     display: flex;
+    align-items: center;
     gap: 100px;
     padding: 0;
     margin: 0;
@@ -176,4 +190,34 @@ ul {
       box-shadow: 7px 0px 7px rgb(0 0 0 / 55%), -7px 0px 7px rgb(0 0 0 / 55%);
     }
   }
+}
+
+// --------------------BACK_TO_HOME----------------------
+
+.back-home {
+  position: fixed;
+  bottom: 7px;
+  right: 7px;
+  padding: 6px 7.5px;
+  background-color: #000000;
+  border-radius: 50%;
+  z-index: 3;
+  border: none;
+
+  opacity: 0.3;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.back-home__icon {
+  transform: rotate(270deg);
+  transform-origin: center;
+  fill: aliceblue;
+}
+
+.btn-hidden {
+  display: none;
 }

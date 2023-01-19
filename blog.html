@@ -121,7 +121,7 @@
               </p>
             </div>
           </div>
-          <ul class="main__items items">
+          <ul class="main__items items" id="back-to-home-appear">
             <li class="items__item">
               <a href="#" onclick="return false;"
                 ><img class="items__img" src="./blog/img/2.png" alt="2"
@@ -246,7 +246,12 @@
         </div>
       </div>
     </main>
-
+    <button class="back-home btn-hidden" id="back-home">
+      <svg width="25" height="25" class="back-home__icon">
+        <use href="./home/icons/video-icons.svg#icon-arrow-right-on-btn"></use>
+      </svg>
+    </button>
+    <script src="./js/back-to-home.js"></script>
     <!-- ---------------BURGER-------------------------- -->
 
     <div class="menu-container js-menu-container" id="mobile-menu">

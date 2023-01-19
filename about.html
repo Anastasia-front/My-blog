@@ -17,46 +17,185 @@
     />
     <title>ABOUT ME</title>
   </head>
-  <body>
-    <div class="about">
-      <h1 class="title">My way to the programming</h1>
-      <p>
-        My journey began in the summer of 2022 - then I first got acquainted
-        with programming. My husband led me to this interesting decision -
-        before getting a job as a support engineer, he studied a lot in courses
-        and on his own, and also made a project to search for films on Angular
-        (like an online guide).  </p>
-        <p>
-For understanding, my husband and I started with
-        Python to understand the basic concepts - and then we moved on to
-        studying Java script. Naturally, we figured out the layout in a proper
-        way. In August, we purchased a Python course from Alexey Nemchinsky, but
-        it turned out to be useless (because we had previously studied a lot of
-        freely available materials that explained all topics in more detail and
-        concisely). Until the end of October, I gradually figured it out on my
-        own (during this time I completed 4 projects, but they did not meet the
-        standards), but I understood that the more complex the material, the
-        less high-quality and relevant free resources are available on the
-        Internet. Therefore, we approached the issue of acquiring effective
-        courses more carefully - and on November 28 I was enrolled for training
-        in the 78th stream of IT GO.
-        </p>  
-      <p>On the first team project on soft skills in
-        group 15, I was approved for the position of Scrum Master for active and
-        proactive participation in the work - under my leadership, we got a
-        beautiful and original project. Already on December 20, I defended all
-        the works and applied for the transition to the previous stream in order
-        to speed up the learning process. On December 24, I was already enrolled
-        in stream 74 and on January 9, 2023, we started a team project on
-        technical skills. </p> 
-      </p>Since there was a mentor in the courses, he helped to
-        structure the code and therefore I made the next 2 projects on the first
-        module (layout) much faster and better. Now I`m just starting the second
-        block in Java script - but knowing the basic concepts, I hope to finish
-        this module faster so that I can master all the course material not in
-        10 months (under the contract) - in 7 already for sure (2 months ahead
-        of my flow). </p>
-      </p>
-    </div>
+  <body class="bg-about">
+    <header  class="header page-header">
+      <div class="container burger-container container-header">
+        <div class="container">
+          <div class="container nav-container">
+            <a href="./index.html" class="logo" >AP</a >
+              <div class="menu">
+                <nav class="nav">
+                  <ul class="nav-items">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="./index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./photo.html">Photo</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="contacts">
+                  <ul class="contacts-icons">
+                    <li class="contacts-icon">
+                      <a
+                        href="mailto:palitsanastasia3.ap@gmail.com"
+                        class="contact-icon" >
+                        <svg class="envelop icon" width="16" fill="#000000" viewBox="0 0 32.311 32.311" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"> <g transform="translate(-224.531 -194.157)"> <path d="M252.782,196.157a2.062,2.062,0,0,1,2.06,2.06v24.191a2.062,2.062,0,0,1-2.06,2.06H228.591a2.063,2.063,0,0,1-2.06-2.06V198.217a2.063,2.063,0,0,1,2.06-2.06h24.191m0-2H228.591a4.06,4.06,0,0,0-4.06,4.06v24.191a4.06,4.06,0,0,0,4.06,4.06h24.191a4.06,4.06,0,0,0,4.06-4.06V198.217a4.06,4.06,0,0,0-4.06-4.06Z"></path> <path d="M240.687,215.205a4.478,4.478,0,0,1-2.729-.922l-13.011-9.943,1.215-1.59,13.01,9.944a2.5,2.5,0,0,0,3.03,0l12.853-9.826,1.215,1.59-12.853,9.825A4.492,4.492,0,0,1,240.687,215.205Z"></path> </g> </g></svg>                
+                        <span>palitsanastasia3.ap@gmail.com</span> </a>
+                    </li>
+                    <li class="contacts-icon">
+                      <a href="tel:+380666080702" class="contact-icon">
+                       <img class="icon" height="22" src="https://img.icons8.com/ios/50/null/apple-phone.png"/>
+                        <span>
+                          +38 (066) 608-07-02
+                        </span> </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <!-- ---------------BURGER-------------------------- -->
+          <div class="header-menu-container">
+            <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          </div>
+        <!-- ---------------BURGER-------------------------- --> 
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="about">
+        <h1 class="title">My way to the programming</h1>
+        <p id="back-to-home-appear">
+          My journey began in the summer of 2022 - then I first got acquainted
+          with programming. My husband led me to this interesting decision -
+          before getting a job as a support engineer, he studied a lot in courses
+          and on his own, and also made a project to search for films on Angular
+          (like an online guide).  </p>
+          <p>
+          For understanding, my husband and I started with
+          Python to understand the basic concepts - and then we moved on to
+          studying Java script. Naturally, we figured out the layout in a proper
+          way. In August, we purchased a Python course from Alexey Nemchinsky, but
+          it turned out to be useless (because we had previously studied a lot of
+          freely available materials that explained all topics in more detail and
+          concisely). Until the end of October, I gradually figured it out on my
+          own (during this time I completed 4 projects, but they did not meet the
+          standards), but I understood that the more complex the material, the
+          less high-quality and relevant free resources are available on the
+          Internet. Therefore, we approached the issue of acquiring effective
+          courses more carefully - and on November 28 I was enrolled for training
+          in the 78th stream of IT GO.
+          </p>  
+        <p >On the first team project on soft skills in
+          group 15, I was approved for the position of Scrum Master for active and
+          proactive participation in the work - under my leadership, we got a
+          beautiful and original project. Already on December 20, I defended all
+          the works and applied for the transition to the previous stream in order
+          to speed up the learning process. On December 24, I was already enrolled
+          in stream 74 - on January 11 (2023) we started a team project on
+          technical skills and on January 17 we successfully presented it.</p> 
+        <p>Since there was a mentor in the courses, he helped to
+          structure the code and therefore I made the next 2 projects on the first
+          module (layout) much faster and better. Now I`m just starting the second
+          block in Java script - but knowing the basic concepts, I hope to finish
+          this module faster so that I can master all the course material not in
+          10 months (under the contract) - in 7 already for sure (2 months ahead
+          of my flow). </p>
+        </p>
+      </div>
+    </main>
+    <button class="back-home btn-hidden" id="back-home">
+      <svg width="25" height="25" class="back-home__icon">
+        <use href="./home/icons/video-icons.svg#icon-arrow-right-on-btn"></use>
+      </svg>
+    </button>  
+    <script src="./js/back-to-home.js"></script>
+     <!-- ---------------BURGER-------------------------- -->
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg fill="#000" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" stroke="#000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"> <path d="M512,42.7L469.3,0l-128,128V0l-64,64l-0.1,170.8l170.8-0.1l64-64H384L512,42.7z M0,341.3h128L0,469.3L42.7,512l128-128v128 l64-64l0.1-170.8L64,277.3L0,341.3z"></path> </g></svg>
+    </button>
+    <ul class="mobile-menu">
+      <li> 
+        <ul class="burger-nav-items">
+          <li class="burger-nav-item">
+            <a href="./index.html" class="mobile-menu active">Home</a>
+          </li>
+          <li class="burger-nav-item">
+            <a href="./blog.html" class="mobile-menu">Blog</a>
+          </li>
+          <li class="burger-nav-item">
+            <a href="./photo.html" class="mobile-menu">Photo</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="burger-contacts-icons">
+          <li class="burger-contacts-icon">
+            <a href="tel:+380666080702" class="contact-icon">
+              <img class="icon" height="24" src="https://img.icons8.com/ios/50/null/apple-phone.png"/>
+              <span>
+                +38 (066) 608-07-02
+              </span> </a></li>
+          <li class="burger-contacts-icon">
+            <a
+              href="mailto:palitsanastasia3.ap@gmail.com"
+              class="contact-icon"
+              >
+              <svg class="icon" width="18" fill="#000000" viewBox="0 0 32.311 32.311" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"> <g transform="translate(-224.531 -194.157)"> <path d="M252.782,196.157a2.062,2.062,0,0,1,2.06,2.06v24.191a2.062,2.062,0,0,1-2.06,2.06H228.591a2.063,2.063,0,0,1-2.06-2.06V198.217a2.063,2.063,0,0,1,2.06-2.06h24.191m0-2H228.591a4.06,4.06,0,0,0-4.06,4.06v24.191a4.06,4.06,0,0,0,4.06,4.06h24.191a4.06,4.06,0,0,0,4.06-4.06V198.217a4.06,4.06,0,0,0-4.06-4.06Z"></path> <path d="M240.687,215.205a4.478,4.478,0,0,1-2.729-.922l-13.011-9.943,1.215-1.59,13.01,9.944a2.5,2.5,0,0,0,3.03,0l12.853-9.826,1.215,1.59-12.853,9.825A4.492,4.492,0,0,1,240.687,215.205Z"></path> </g> </g></svg>                
+              <span>palitsanastasia3.ap@gmail.com</span> </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="burger-svg-icons">
+          <li>
+            <a href="https://www.instagram.com/nastia_stretching/" target="_blank" rel="noopener noreferrer" class="pic" ><img height="40" width="40" src="./home/icons/instagram.png" alt="label instagram"/></a>
+          </li>
+          <li>
+            <a href="https://t.me/nastia_stretching" target="_blank" rel="noopener noreferrer" class="pic"> <img height="40" width="40" src="./home/icons/telegram (1).png" alt="label telegram"  /></a>
+          </li>
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=380666080702&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D1%8F%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83..." target="_blank" rel="noopener noreferrer" class="pic"><img height="40" width="40" src="./home/icons/whatsapp.png" alt="label whatsapp" /></a>
+          </li>
+          <li>
+            <a href="http://www.linkedin.com/in/%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B0%D1%81%D0%B8%D1%8F-%D0%BF%D1%80%D0%B8%D1%81%D1%8F%D0%B6%D0%BD%D0%B0%D1%8F-b425a517a" target="_blank" rel="noopener noreferrer" class="pic"><img height="40" width="40" src="./home/icons/linkedin.png" alt="label linkedin" /></a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+</div>
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
+<script defer src="js/mobile-menu.js"></script>
+<!-- ---------------BURGER-------------------------- -->
   </body>
 </html>

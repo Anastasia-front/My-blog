@@ -3,14 +3,20 @@
   font-size: 20px;
   font-weight: normal;
   line-height: 1.7;
+  text-align: left;
   padding: 20px 30px;
-  margin: 50px 20px;
+  margin: 90px 10px 20px 10px;
   background: var(--bg-violet);
   border: 3px solid var(--grey);
   @media screen and (min-width: 428px) {
-    margin: 50px 70px;
+    text-align: justify;
+    margin: 100px 30px 10px 30px;
     padding: 20px 50px;
   }
+  @media screen and (min-width: 768px) {
+    margin: 30px 30px 10px 30px;
+  }
+
   .title {
     text-transform: uppercase;
     border-bottom: 2px solid #000;
@@ -21,4 +27,7 @@
   p {
     text-indent: 25px;
   }
+}
+.bg-about {
+  background: var(--light-violet);
 }

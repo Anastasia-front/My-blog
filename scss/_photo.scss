@@ -45,11 +45,9 @@
   text-transform: uppercase;
   line-height: 1.5;
   text-decoration: none;
-  &:active,
-  &:hover,
-  &:focus {
-    color: var(--black);
-    text-shadow: none;
+  &:hover {
+    text-shadow: var(--text-shadow-black);
+    color: var(--light-green);
   }
   @media screen and (min-width: 428px) {
     font-size: 20px;
