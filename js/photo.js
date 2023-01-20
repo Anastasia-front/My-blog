@@ -28,6 +28,12 @@ const observer = new IntersectionObserver(
             "photo-active",
             getId(link) === entry.target.id
           );
+          // link.addEventListener("blur", () => {
+          //   link.classList.remove(
+          //     "photo-active",
+          //     getId(link) !== entry.target.id
+          //   );
+          // });
         });
       }
     });

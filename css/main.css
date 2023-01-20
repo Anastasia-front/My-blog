@@ -670,6 +670,11 @@
   text-transform: uppercase;
   line-height: 1.5;
   text-decoration: none;
+  text-shadow: none;
+}
+.sidebar__link:focus, .sidebar__link:active {
+  text-shadow: var(--text-shadow-black);
+  color: var(--white);
 }
 .sidebar__link:hover {
   text-shadow: var(--text-shadow-black);

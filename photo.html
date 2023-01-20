@@ -124,13 +124,17 @@
           <nav class="sidebar__menu">
             <ul class="sidebar__list">
               <li>
-                <a href="#1" class="sidebar__link" id="1">shri-lanka</a>
+                <a href="#1" class="sidebar__link" id="1" tabindex="1"
+                  >shri-lanka</a
+                >
               </li>
               <li>
-                <a href="#2" class="sidebar__link" id="2">fotoset in july</a>
+                <a href="#2" class="sidebar__link" id="2" tabindex="2"
+                  >fotoset in july</a
+                >
               </li>
               <li>
-                <a href="#3" class="sidebar__link" id="3"
+                <a href="#3" class="sidebar__link" id="3" tabindex="3"
                   >fotoset in september</a
                 >
               </li>
@@ -139,13 +143,16 @@
         </aside>
         <section class="photo">
           <div class="photo-container">
-            <h1 class="photo__title padding" id="1">My albums</h1>
+            <h1 class="photo__title">My albums</h1>
             <h2 class="photo__subtitle">Gallery</h2>
             <section class="photo__gallery gallery">
-              <h6 class="gallery__subtitle">shri-lanka</h6>
+              <h6 class="gallery__subtitle padding" id="1">shri-lanka</h6>
               <div class="gallery__items">
-                <div class="gallery__item">
-                  <img src="./photos/img/shri/48.jpg" alt="orange flower" />
+                <div class="gallery__item" id="back-to-home-appear">
+                  <img
+                    src="./photos/img/shri/IMG_8448.jpg"
+                    alt="ocean,sunset"
+                  />
                 </div>
                 <div class="gallery__item">
                   <img
@@ -165,12 +172,6 @@
                     alt="beautiful view"
                   />
                 </div>
-                <div class="gallery__item" id="back-to-home-appear">
-                  <img
-                    src="./photos/img/shri/IMG_8448.jpg"
-                    alt="ocean,sunset"
-                  />
-                </div>
                 <div class="gallery__item">
                   <img
                     src="./photos/img/shri/IMG_84566.jpg"
@@ -185,8 +186,8 @@
                 </div>
                 <div class="gallery__item">
                   <img
-                    src="./photos/img/shri/IMG_0503.jpg"
-                    alt="rest with view from bed"
+                    src="./photos/img/shri/IMG_7668.jpg"
+                    alt="palm trees reach the sky"
                   />
                 </div>
                 <div class="gallery__item">
@@ -197,15 +198,18 @@
                 </div>
                 <div class="gallery__item">
                   <img
-                    src="./photos/img/shri/IMG_7668.jpg"
-                    alt="palm trees reach the sky"
+                    src="./photos/img/shri/IMG_0503.jpg"
+                    alt="rest with view from bed"
                   />
+                </div>
+                <div class="gallery__item gallery__item_add">
+                  <img src="./photos/img/shri/55.jpg" alt="rice fields" />
                 </div>
                 <div class="gallery__item">
                   <img src="./photos/img/shri/13.jpg" alt="tropical bush" />
                 </div>
-                <div class="gallery__item gallery__item_add">
-                  <img src="./photos/img/shri/55.jpg" alt="rice fields" />
+                <div class="gallery__item">
+                  <img src="./photos/img/shri/11.jpg" alt="night in garden" />
                 </div>
                 <div class="gallery__item">
                   <img src="./photos/img/shri/14.jpg" alt="two palm trees" />
@@ -213,13 +217,10 @@
                 <div class="gallery__item">
                   <img src="./photos/img/shri/12.jpg" alt="dark and pink" />
                 </div>
-                <div class="gallery__item">
-                  <img src="./photos/img/shri/11.jpg" alt="night in garden" />
-                </div>
               </div>
             </section>
-            <section class="photo__gallery padding gallery">
-              <h6 class="gallery__subtitle" id="2">fotoset in july</h6>
+            <section class="photo__gallery gallery">
+              <h6 class="gallery__subtitle padding" id="2">fotoset in july</h6>
               <div class="gallery__items">
                 <div class="gallery__item">
                   <img
@@ -274,8 +275,10 @@
                 </div>
               </div>
             </section>
-            <section class="photo__gallery gallery padding">
-              <h6 class="gallery__subtitle" id="3">fotoset in september</h6>
+            <section class="photo__gallery gallery">
+              <h6 class="gallery__subtitle padding" id="3">
+                fotoset in september
+              </h6>
               <div class="gallery__items">
                 <div class="gallery__item">
                   <img
