@@ -1,5 +1,4 @@
 .overlay {
-  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -7,6 +6,7 @@
   height: 100vh;
   background-color: rgba(46, 47, 66, 0.4);
   opacity: 0;
+  visibility: hidden;
   transition: opacity var(--main-transition);
   z-index: 999;
 }
@@ -15,12 +15,17 @@
   opacity: 1;
   visibility: visible;
 }
+.no-scroll {
+  overflow: hidden;
+}
 .modal {
+  opacity: 0;
+  visibility: hidden;
   z-index: 1000;
   position: absolute;
-  top: 55%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 55%);
   transition: transform var(--main-transition);
   overflow: scroll;
   background-color: var(--pink);

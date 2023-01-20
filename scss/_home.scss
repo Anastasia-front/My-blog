@@ -13,10 +13,12 @@
 }
 .section-profile,
 .my-projects {
-  margin-top: 10vh;
+  margin-top: 75px;
 }
 .section-profile {
-  padding: 50px 0;
+  @media screen and (max-width: 768px) {
+    padding: 20px 0;
+  }
   max-width: min-content;
 }
 .profile-container {
@@ -237,7 +239,7 @@
   gap: 20px;
   @media screen and (min-width: 1200px) {
     column-gap: 29px;
-    row-gap: 53px;
+    row-gap: 43px;
   }
   justify-content: start;
   align-items: center;
@@ -433,7 +435,7 @@
     font-size: 30px;
   }
   .spoiler {
-    margin: -30px 0 0 1px;
+    margin: 30px 0 0 1px;
     width: 99.8%;
     padding-bottom: 50px;
   }
@@ -460,23 +462,3 @@
     padding-bottom: 70px;
   }
 }
-/* ----------------------------GO_TOP---------------------------- */
-
-// #go-top {
-//   position: fixed;
-//   bottom: 25px;
-//   right: 70px;
-//   text-align: center;
-//   cursor: pointer;
-//   display: none;
-//   width: 80px;
-//   height: 30px;
-//   background: #c0c0c0;
-//   line-height: 30px;
-//   border-radius: 5px;
-// }
-
-// #go-top:hover {
-//   background: #333;
-//   color: #fff;
-// }
