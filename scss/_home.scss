@@ -30,6 +30,9 @@
   border: 1px solid rgba(0, 0, 0, 0.07);
   box-shadow: 2px 6px 31px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 .flex,
 .block,
@@ -229,8 +232,12 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  @media screen and (max-width: 768px) {
+    margin: 0 0 40px 90px;
+    text-align: center;
+  }
   .under {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: normal;
   }
 }
@@ -280,10 +287,18 @@
   .spoiler__item:first-child {
     .spoiler__title::before,
     .spoiler__title::after {
-      @media screen and (min-width: 428px) and (max-width: 691px) {
+      @media screen and (min-width: 428px) and (max-width: 591px) {
         content: "";
         width: 3.6%;
         height: 8%;
+        background-color: #000;
+        position: absolute;
+        top: 20px;
+      }
+      @media screen and (min-width: 592px) and (max-width: 691px) {
+        content: "";
+        width: 3.6%;
+        height: 4%;
         background-color: #000;
         position: absolute;
         top: 20px;

@@ -127,7 +127,14 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
-
+.header .burger-container .container {
+  position: relative;
+}
+.header-menu-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 .nav-container {
   display: flex;
   justify-content: space-between;
