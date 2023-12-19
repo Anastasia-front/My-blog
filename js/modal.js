@@ -76,3 +76,30 @@ document.addEventListener("DOMContentLoaded", function () {
     body.classList.remove("no-scroll");
   });
 }); // end ready
+
+function submitForm() {
+  const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email");
+  const textareaInput = document.getElementById("textarea");
+
+  // Check if inputs are not empty
+  if (
+    nameInput.value.trim() === "" ||
+    textareaInput.value.trim() === "" ||
+    emailInput.value.trim() === ""
+  ) {
+    alert("Please fill in all the fields.");
+  } else {
+    document.getElementById("myForm").style.display = "none";
+    document.getElementById("result").style.display = "block";
+
+    nameInput.value = "";
+    emailInput.value = "";
+    textareaInput.value = "";
+
+    setTimeout(function () {
+      document.getElementById("myForm").style.display = "block";
+      document.getElementById("result").style.display = "none";
+    }, 3000);
+  }
+}

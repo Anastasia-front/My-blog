@@ -588,7 +588,48 @@
           ></path>
         </svg>
       </button>
-      <h3 class="title">
+      <form
+        id="myForm"
+        action="https://formsubmit.co/palitsanastasia3@gmail.com"
+        method="POST"
+      >
+        <label class="modal-contact-me-label" for="name">Name:</label>
+        <input
+          class="modal-contact-me-input"
+          type="text"
+          id="name"
+          name="name"
+          required
+        />
+
+        <label class="modal-contact-me-label" for="email">Email:</label>
+        <input
+          class="modal-contact-me-input"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+
+        <label class="modal-contact-me-label" for="textarea">Message:</label>
+        <textarea
+          class="modal-contact-me-textarea"
+          type="textarea"
+          id="textarea"
+          name="textarea"
+          required
+        ></textarea>
+
+        <button
+          class="modal-contact-me-button"
+          type="submit"
+          onclick="submitForm()"
+        >
+          Send
+        </button>
+      </form>
+
+      <h3 class="title" id="result">
         Your notification has been sent to me - I will be glad to be interviewed
         by you soon!)
       </h3>
