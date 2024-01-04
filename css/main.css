@@ -1398,9 +1398,9 @@ ul {
   visibility: hidden;
   z-index: 1000;
   position: absolute;
-  top: 50%;
+  top: 50vh;
   left: 50%;
-  transform: translate(-50%, -20%);
+  transform: translate(-50%, -30vh);
   transition: transform var(--main-transition);
   overflow: scroll;
   background-color: var(--pink);
@@ -1434,8 +1434,10 @@ ul {
 }
 
 .modal-contact-me {
-  width: 30%;
-  height: 70%;
+  min-width: 300px;
+  max-width: 370px;
+  min-height: 400px;
+  max-height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
